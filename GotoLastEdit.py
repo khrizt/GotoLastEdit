@@ -39,10 +39,10 @@ class CaptureEditing(sublime_plugin.EventListener):
 
     def on_close(self, view):
         CE = CaptureEditing
-        CE.last_line.remove(view.id())
-        CE.prev_line.remove(view.id())
-        CE.posn.remove(view.id())
-        CE.view_refs.remove(view.id())
+        del CE.last_line[view.id()]
+        del CE.prev_line[view.id()]
+        del CE.view_refs[view.id()]
+        del CE.posn[view.id()]
 
     def on_new(self, view):
         CE = CaptureEditing

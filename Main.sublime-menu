@@ -1,0 +1,40 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "GotoLastEdit",
+                        "children":
+                        [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/GotoLastEdit/GotoLastEdit.sublime-settings",
+                                    "default": "{\n\t\"history_size\": 50\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/GotoLastEdit/Default (${platform}).sublime-keymap",
+                                    "default": "[\n\t{\n\t\t\"keys\": [\"ctrl+q\"],\n\t\t\"command\": \"last_edit_line\"\n\t}\n]\n"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

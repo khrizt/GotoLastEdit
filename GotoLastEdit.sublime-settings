@@ -1,0 +1,7 @@
+{
+    // Number of edit locations kept in history (per buffer and across views).
+    // Increase this if you want Goto Last Edit to reach further back.
+    // Default in older releases was effectively 5–10; 50 is a comfortable
+    // longer history without noticeable overhead.
+    "history_size": 50
+}

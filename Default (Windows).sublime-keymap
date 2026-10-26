@@ -1,5 +1,6 @@
 [
     {
-        "keys": ["ctrl+q"], "command": "last_edit_line"  
+        "keys": ["ctrl+q"],
+        "command": "last_edit_line"
     }
 ]

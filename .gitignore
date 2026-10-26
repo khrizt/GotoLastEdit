@@ -1,1 +1,7 @@
 *.pyc
+__pycache__/
+.Python
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+agent-tools/
